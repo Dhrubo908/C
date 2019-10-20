@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int i,n,a=1,b=1,c;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        printf("%d\n",a);
+        c=a+b;                             //when,
+                                                 //a=1    b=1    c=2
+        a=b;                                     //a=1     b=2   c=3
+                                                 //a=2      b=3   c=5
+                                                  //(print always a)
+    b=c;
+    }
+    return 0;
+}
