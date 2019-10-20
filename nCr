@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int n,nc,cr,r,nr,factnc=1,factcr=1,factnr=1,result,x;
+    scanf("%d%d",&n,&r);
+    for(nc=1;nc<=n;nc++)
+    {
+        factnc=nc*factnc;
+    }
+    for(cr=1;cr<=r;cr++)
+    {
+        factcr=cr*factcr;
+    }
+   x=n-r;
+    for(nr=1;nr<=x;nr++)
+    {
+        factnr=factnr*nr;
+    }
+    result=(factnc/(factcr*factnr));
+    printf("%d",result);
+    return 0;
+}
