@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+   char s1[30];
+   char s2[30];
+   gets(s1);
+   gets(s2);
+   strcat(s1,s2);
+    printf("srting copy %s ",s1);     //IMPORTANT_S1_AR_LAST_A_S2_ADD_HOSSE
+    return 0;
+}
+
