@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int d;
+    char s1[30];
+    char s2[30];
+    gets(s1);
+    gets(s2);
+
+    d = strcmp(s1,s2);
+
+
+    if(d==0)
+    {
+        printf("equal");
+
+    }
+    else
+    printf("not equal");
+
+return 0;
+}
+
